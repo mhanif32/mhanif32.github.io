@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Hanif (mhanif32) | Full-Stack Developer | AI (Ollama) | Windows & Linux Admin</title>
+  <title>Muhammad Hanif (mhanif32) | Full-Stack Developer | AI Ollama | Windows & Linux Admin</title>
   <meta name="description" content="Muhammad Hanif (mhanif32) - Full-stack developer, system administrator, AI Ollama expert, .NET, Python, PHP, IIS, Apache, Nginx, Windows & Linux servers, Cloud (AWS, Contabo, Azure, GCP)">
   <meta name="keywords" content="mhanif32, Muhammad Hanif, Full-Stack Developer, .NET, Python, PHP, NodeJS, Ollama AI, Windows Server, Linux Server, IIS, Apache, Nginx, Cloud, AWS, Azure, Contabo, GCP, SQL, MySQL">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -29,17 +29,40 @@
   </script>
 
   <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#fff;}
-    .container {max-width:900px; margin:auto; padding:40px;}
-    h1 {font-size:40px; margin-bottom:10px;}
-    .tag {color:#38bdf8;}
-    .card {background:#1e293b; padding:20px; border-radius:12px; margin-top:20px; box-shadow:0 10px 25px rgba(0,0,0,0.3);} 
-    a {color:#38bdf8; text-decoration:none;}
-    .btn {display:inline-block; margin:10px 10px 0 0; padding:10px 15px; background:#38bdf8; color:#000; border-radius:6px; font-weight:bold;}
-    .profile {display:flex; align-items:center; gap:20px; flex-wrap:wrap;}
-    .profile img {width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid #38bdf8;}
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    :root {
+      --primary: #38bdf8;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-light: #f1f5f9;
+      --text-muted: #94a3b8;
+      --btn-hover: #0ea5e9;
+    }
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text-light); line-height:1.6;}
+    a {color: var(--primary); text-decoration:none; transition:0.3s;}
+    a:hover {color: var(--btn-hover);}
+    .container {max-width:900px; margin: auto; padding: 40px 20px;}
+    h1 {font-size:3rem; margin-bottom:0.5rem;}
+    h2 {font-size:1.5rem; margin-bottom:0.8rem; display:flex; align-items:center; gap:10px;}
+    .tag {color: var(--primary);}
+    .profile {display:flex; flex-wrap:wrap; align-items:center; gap:20px; margin-bottom:40px;}
+    .profile img {width:140px; height:140px; border-radius:50%; border:4px solid var(--primary); object-fit:cover; transition:0.3s;}
+    .profile img:hover {transform: scale(1.05);}
+    .card {background: var(--card-bg); padding:25px 20px; border-radius:15px; margin-bottom:25px; box-shadow:0 15px 30px rgba(0,0,0,0.3); transition:0.3s;}
+    .card:hover {transform: translateY(-5px);}
     ul {padding-left:20px;}
-    li {margin-bottom:6px;}
+    li {margin-bottom:8px;}
+    .btn {display:inline-block; margin:10px 10px 0 0; padding:12px 20px; background: var(--primary); color:#000; font-weight:600; border-radius:8px; transition:0.3s;}
+    .btn:hover {background: var(--btn-hover);}
+    .highlight {color: var(--primary); font-weight:600;}
+    p {margin-bottom:1rem;}
+    @media(max-width:600px){
+      .profile {flex-direction:column; text-align:center;}
+      .profile div {width:100%;}
+    }
   </style>
 </head>
 <body>
@@ -55,36 +78,23 @@
 
     <div class="card">
       <h2>🚀 Professional Biography</h2>
-      <p>
-        Muhammad Hanif (mhanif32) is an experienced IT professional, full-stack developer, and system administrator specializing in Windows and Linux server environments. He has strong expertise in managing web servers, deploying applications, and maintaining secure, scalable infrastructure across multiple platforms.
-      </p>
-      <p>
-        He is proficient in modern development technologies including .NET, Python, PHP, and NodeJS, and has extensive experience deploying applications on web servers such as Apache, Nginx, and Microsoft IIS. His work includes building, deploying, and optimizing high-performance web applications for production environments.
-      </p>
-      <p>
-        Muhammad Hanif is highly skilled in Windows Server administration and Linux system management, handling tasks such as server configuration, performance tuning, security hardening, and uptime monitoring.
-      </p>
-      <p>
-        In addition to his development and infrastructure expertise, he works with modern AI technologies using Ollama, enabling local large language model (LLM) deployment for automation, intelligent workflows, and privacy-focused AI solutions.
-      </p>
-      <p>
-        He has hands-on experience with cloud platforms such as AWS, Azure, Contabo, and GCP, including server provisioning, SSL configuration, and troubleshooting complex production systems.
-      </p>
-      <p>
-        With a strong passion for technology and innovation, Muhammad Hanif focuses on building reliable systems, optimizing performance, and implementing scalable solutions across development, cloud, and AI-driven environments.
-      </p>
+      <p>Muhammad Hanif (<span class="highlight">mhanif32</span>) is a cutting-edge IT professional, full-stack developer, and system administrator with mastery in <span class="highlight">Windows</span> & <span class="highlight">Linux</span> servers. He delivers secure, scalable, and high-performance solutions across multiple platforms.</p>
+      <p>He excels in modern development technologies including <span class="highlight">.NET, Python, PHP, NodeJS</span> and is highly skilled in deploying applications on <span class="highlight">IIS, Apache, and Nginx</span> servers. His portfolio spans high-impact web apps, automation scripts, and complex APIs.</p>
+      <p>Muhammad is also an AI innovator, leveraging <span class="highlight">Ollama</span> to deploy local LLMs for automation, privacy-focused AI solutions, and intelligent workflows.</p>
+      <p>He has extensive experience in cloud environments like <span class="highlight">AWS, Azure, Contabo, GCP</span>, including provisioning, SSL setup, and production troubleshooting.</p>
+      <p>Driven by passion for technology, Muhammad focuses on building <span class="highlight">reliable, scalable, and optimized systems</span> across software, infrastructure, and AI landscapes.</p>
     </div>
 
     <div class="card">
-      <h2>💡 Skills</h2>
+      <h2>💡 Key Skills</h2>
       <ul>
-        <li>.NET Core / ASP.NET</li>
-        <li>Python / PHP / NodeJS</li>
-        <li>Ollama AI (Local LLMs)</li>
-        <li>Windows Server & Linux</li>
-        <li>IIS, Apache, Nginx</li>
-        <li>Cloud (Azure, AWS, Contabo, GCP)</li>
-        <li>SQL Server / MySQL</li>
+        <li><span class="highlight">.NET Core / ASP.NET</span></li>
+        <li><span class="highlight">Python / PHP / NodeJS</span></li>
+        <li><span class="highlight">Ollama AI (Local LLMs)</span></li>
+        <li><span class="highlight">Windows Server & Linux</span></li>
+        <li><span class="highlight">IIS, Apache, Nginx</span></li>
+        <li><span class="highlight">Cloud: Azure, AWS, Contabo, GCP</span></li>
+        <li><span class="highlight">SQL Server / MySQL</span></li>
       </ul>
     </div>
 
@@ -99,21 +109,16 @@
 
     <div class="card">
       <h2>🌐 Find Me Online</h2>
-      <a class="btn" href="https://www.upwork.com/freelancers/~01f602ea358de439ef">Hire on Upwork</a>
-      <a class="btn" href="https://www.linkedin.com/in/mhanif32/">LinkedIn Profile</a>
-      <a class="btn" href="https://github.com/mhanif32">GitHub Projects</a>
-      <a class="btn" href="https://www.facebook.com/mhanif32/">Facebook Page</a>
+      <a class="btn" href="https://www.upwork.com/freelancers/~01f602ea358de439ef" target="_blank">Hire on Upwork</a>
+      <a class="btn" href="https://www.linkedin.com/in/mhanif32/" target="_blank">LinkedIn</a>
+      <a class="btn" href="https://github.com/mhanif32" target="_blank">GitHub</a>
+      <a class="btn" href="https://www.facebook.com/mhanif32/" target="_blank">Facebook</a>
     </div>
 
     <div class="card">
       <h2>📩 Contact Me</h2>
       <p>Email: <a href="mailto:mhanif32@gmail.com">mhanif32@gmail.com</a></p>
       <p>WhatsApp: <a href="https://wa.me/923009255671" target="_blank">+92 300 9255671</a></p>
-    </div>
-
-    <div class="card">
-      <h2>🔍 SEO Note</h2>
-      <p>Search "mhanif32" on Google to find all my profiles and work.</p>
     </div>
 
   </div>
