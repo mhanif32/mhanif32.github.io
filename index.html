@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhammad Hanif (mhanif32) | Full-Stack Developer | AI Ollama | Windows & Linux Admin</title>
-  <meta name="description" content="Muhammad Hanif (mhanif32) - Full-stack developer, system administrator, AI Ollama expert, .NET, Python, PHP, IIS, Apache, Nginx, Windows & Linux servers, Cloud (AWS, Contabo, Azure, GCP)">
-  <meta name="keywords" content="mhanif32, Muhammad Hanif, Full-Stack Developer, .NET, Python, PHP, NodeJS, Ollama AI, Windows Server, Linux Server, IIS, Apache, Nginx, Cloud, AWS, Azure, Contabo, GCP, SQL, MySQL">
+  <meta name="description" content="Muhammad Hanif (mhanif32) - Full-stack developer, network administrator, cloud web servers, proxy/email servers, and AI Ollama integration expert. Specializing in .NET 9, Blazor, Python, and multi-server environments.">
+  <meta name="keywords" content="mhanif32, Muhammad Hanif, Full-Stack Developer, .NET 9, Blazor, Network Administrator, Cloud Web Servers, Proxy Servers, Email Servers, Ollama AI, Windows Server Core, Linux, IIS, Nginx">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+  <!-- SEO / Schema.org Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -18,9 +19,10 @@
       "https://www.upwork.com/freelancers/~01f602ea358de439ef",
       "https://github.com/mhanif32",
       "https://www.linkedin.com/in/mhanif32/",
+      "https://x.com/mhanif32",
       "https://www.facebook.com/mhanif32/"
     ],
-    "jobTitle": "Full-Stack Developer, System Administrator, AI (Ollama) Expert",
+    "jobTitle": "Full-Stack Developer, Network Administrator, AI Infrastructure Expert",
     "worksFor": {
       "@type": "Organization",
       "name": "Freelance / Self-employed"
@@ -29,98 +31,406 @@
   </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
     :root {
       --primary: #38bdf8;
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text-light: #f1f5f9;
+      --primary-glow: rgba(56, 189, 248, 0.15);
+      --bg: #0b0f19;
+      --card-bg: rgba(30, 41, 59, 0.4);
+      --card-border: rgba(255, 255, 255, 0.05);
+      --text-light: #f8fafc;
       --text-muted: #94a3b8;
-      --btn-hover: #0ea5e9;
+      --accent: #a78bfa;
     }
 
-    * {margin:0; padding:0; box-sizing:border-box;}
-    body {font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text-light); line-height:1.6;}
-    a {color: var(--primary); text-decoration:none; transition:0.3s;}
-    a:hover {color: var(--btn-hover);}
-    .container {max-width:900px; margin: auto; padding: 40px 20px;}
-    h1 {font-size:3rem; margin-bottom:0.5rem;}
-    h2 {font-size:1.5rem; margin-bottom:0.8rem; display:flex; align-items:center; gap:10px;}
-    .tag {color: var(--primary);}
-    .profile {display:flex; flex-wrap:wrap; align-items:center; gap:20px; margin-bottom:40px;}
-    .profile img {width:140px; height:140px; border-radius:50%; border:4px solid var(--primary); object-fit:cover; transition:0.3s;}
-    .profile img:hover {transform: scale(1.05);}
-    .card {background: var(--card-bg); padding:25px 20px; border-radius:15px; margin-bottom:25px; box-shadow:0 15px 30px rgba(0,0,0,0.3); transition:0.3s;}
-    .card:hover {transform: translateY(-5px);}
-    ul {padding-left:20px;}
-    li {margin-bottom:8px;}
-    .btn {display:inline-block; margin:10px 10px 0 0; padding:12px 20px; background: var(--primary); color:#000; font-weight:600; border-radius:8px; transition:0.3s;}
-    .btn:hover {background: var(--btn-hover);}
-    .highlight {color: var(--primary); font-weight:600;}
-    p {margin-bottom:1rem;}
-    @media(max-width:600px){
-      .profile {flex-direction:column; text-align:center;}
-      .profile div {width:100%;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(167, 139, 250, 0.05) 0px, transparent 50%);
+      color: var(--text-light);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    /* Hero Section */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 50px;
+      padding: 20px 0;
+    }
+
+    .profile-img-container {
+      position: relative;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .profile:hover img {
+      transform: translateY(-5px) rotate(2deg);
+      border-color: var(--primary);
+      box-shadow: 0 0 25px var(--primary-glow);
+    }
+
+    .profile h1 {
+      font-size: 3.25rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Cards Layout */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      padding: 35px;
+      border-radius: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+    }
+
+    .highlight {
+      color: var(--text-light);
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Badges/Skills Design */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill-badge {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: all 0.3s ease;
+    }
+
+    .skill-badge:hover {
+      background: var(--primary-glow);
+      color: var(--primary);
+      border-color: rgba(56, 189, 248, 0.3);
+      transform: scale(1.03);
+    }
+
+    /* Interactive Projects List */
+    .project-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media(min-width: 768px) {
+      .project-list { grid-template-columns: 1fr 1fr; }
+    }
+
+    .project-item {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .project-item:hover {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .project-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .project-title::after {
+      content: "→";
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--primary);
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover .project-title::after {
+      transform: translateX(4px);
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .project-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--primary);
+    }
+
+    /* Online Links / CTA Buttons */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text-light);
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-radius: 14px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    .btn.btn-primary {
+      background: var(--primary);
+      color: #040814;
+      border: none;
+    }
+
+    .btn.btn-primary:hover {
+      background: #7dd3fc;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn:not(.btn-primary):hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+
+    /* Contact Block */
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 10px;
+    }
+
+    .contact-method {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .contact-value {
+      font-size: 1.1rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-value:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 640px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      .profile h1 { font-size: 2.4rem; }
+      .card { padding: 24px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
 
-    <div class="profile">
-      <img src="Mhanif32-New.png" alt="Muhammad Hanif mhanif32 Full-Stack Developer AI Ollama">
-      <div>
-        <h1>Muhammad Hanif <span class="tag">(mhanif32)</span></h1>
-        <p><strong>Full-Stack Developer | System Administrator | AI (Ollama)</strong></p>
+    <!-- Header / Identity Area -->
+    <header class="profile">
+      <div class="profile-img-container">
+        <img src="Mhanif32-New.png" alt="Muhammad Hanif (mhanif32)">
       </div>
-    </div>
+      <div>
+        <h1>Muhammad Hanif <span class="tag">_</span></h1>
+        <div class="subtitle">Full-Stack Developer & Infrastructure Engineer</div>
+      </div>
+    </header>
 
-    <div class="card">
+    <!-- Professional Biography -->
+    <section class="card">
       <h2>🚀 Professional Biography</h2>
-      <p>Muhammad Hanif (<span class="highlight">mhanif32</span>) is a cutting-edge IT professional, full-stack developer, and system administrator with mastery in <span class="highlight">Windows</span> & <span class="highlight">Linux</span> servers. He delivers secure, scalable, and high-performance solutions across multiple platforms.</p>
-      <p>He excels in modern development technologies including <span class="highlight">.NET, Python, PHP, NodeJS</span> and is highly skilled in deploying applications on <span class="highlight">IIS, Apache, and Nginx</span> servers. His portfolio spans high-impact web apps, automation scripts, and complex APIs.</p>
-      <p>Muhammad is also an AI innovator, leveraging <span class="highlight">Ollama</span> to deploy local LLMs for automation, privacy-focused AI solutions, and intelligent workflows.</p>
-      <p>He has extensive experience in cloud environments like <span class="highlight">AWS, Azure, Contabo, GCP</span>, including provisioning, SSL setup, and production troubleshooting.</p>
-      <p>Driven by passion for technology, Muhammad focuses on building <span class="highlight">reliable, scalable, and optimized systems</span> across software, infrastructure, and AI landscapes.</p>
-    </div>
+      <p>Muhammad Hanif (<span class="highlight">mhanif32</span>) is an advanced IT professional, full-stack developer, and infrastructure engineer optimizing production environments across deep application logic and core server architecture.</p>
+      <p>He builds modern systems utilizing the <span class="highlight">.NET ecosystem (.NET 9 & Blazor)</span> alongside Python and PHP workflows. Uniquely bridging software architecture and bare-metal/cloud administration, he manages robust deployments across <span class="highlight">Windows Server Core, Linux environments, Nginx, and IIS</span> configurations.</p>
+      <p>An on-premise AI specialist, Muhammad engineers localized solutions utilizing <span class="highlight">Ollama and LiteLLM</span> integrations—delivering private, highly performant LLM pipelines and automated systems backed by dedicated physical architectures.</p>
+    </section>
 
-    <div class="card">
-      <h2>💡 Key Skills</h2>
-      <ul>
-        <li><span class="highlight">.NET Core / ASP.NET</span></li>
-        <li><span class="highlight">Python / PHP / NodeJS</span></li>
-        <li><span class="highlight">Ollama AI (Local LLMs)</span></li>
-        <li><span class="highlight">Windows Server & Linux</span></li>
-        <li><span class="highlight">IIS, Apache, Nginx</span></li>
-        <li><span class="highlight">Cloud: Azure, AWS, Contabo, GCP</span></li>
-        <li><span class="highlight">SQL Server / MySQL</span></li>
-      </ul>
-    </div>
+    <!-- Key Skills Stack -->
+    <section class="card">
+      <h2>💡 Core Stack & Specializations</h2>
+      <p>Expertise engineered across infrastructure, server deployment, and modern application layers:</p>
+      <div class="skills-grid">
+        <div class="skill-badge">.NET 9 / Blazor Architecture</div>
+        <div class="skill-badge">Ollama / Local AI Infrastructure</div>
+        <div class="skill-badge">Network & Server Administration</div>
+        <div class="skill-badge">Cloud Web Servers & Proxies</div>
+        <div class="skill-badge">Email Server Environments</div>
+        <div class="skill-badge">Windows Server Core & IIS</div>
+        <div class="skill-badge">Ubuntu Server & Nginx Proxy</div>
+        <div class="skill-badge">Python & Automation Services</div>
+        <div class="skill-badge">SQL Server / MySQL Optimization</div>
+        <div class="skill-badge">PowerShell & Shell Scripting</div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>🖥️ Portfolio Projects</h2>
-      <ul>
-        <li><a href="https://github.com/mhanif32/project1" target="_blank">Project 1 - Web App Deployment (.NET, IIS)</a></li>
-        <li><a href="https://github.com/mhanif32/project2" target="_blank">Project 2 - Python Automation Script</a></li>
-        <li><a href="https://github.com/mhanif32/project3" target="_blank">Project 3 - NodeJS API Development</a></li>
-      </ul>
-    </div>
+    <!-- Production & Portfolio Projects -->
+    <section class="card">
+      <h2>🖥️ Production Portfolio</h2>
+      <div class="project-list">
+        <a href="https://github.com/mhanif32/TechUnitedChatAI" class="project-item" target="_blank">
+          <div>
+            <div class="project-title">TechUnitedChatAI</div>
+            <div class="project-desc">A localized, secure AI-powered communication chat workspace built on .NET 9 engine orchestrating local Ollama models.</div>
+          </div>
+          <div class="project-meta">.NET 9 • Ollama LLM • C#</div>
+        </a>
+        
+        <a href="https://github.com/mhanif32/ARQRStudio" class="project-item" target="_blank">
+          <div>
+            <div class="project-title">ARQRStudio</div>
+            <div class="project-desc">3D Model asset platform handling secure .glb uploads, asset metadata indexes, and automated vector QR thumbnail generations.</div>
+          </div>
+          <div class="project-meta">Blazor • 3D Assets • Web API</div>
+        </a>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>🌐 Find Me Online</h2>
-      <a class="btn" href="https://www.upwork.com/freelancers/~01f602ea358de439ef" target="_blank">Hire on Upwork</a>
-      <a class="btn" href="https://www.linkedin.com/in/mhanif32/" target="_blank">LinkedIn</a>
-      <a class="btn" href="https://github.com/mhanif32" target="_blank">GitHub</a>
-      <a class="btn" href="https://www.facebook.com/mhanif32/" target="_blank">Facebook</a>
-    </div>
+    <!-- Channels / Availability -->
+    <section class="card">
+      <h2>🌐 Professional Ecosystem</h2>
+      <div class="links-grid">
+        <a class="btn btn-primary" href="https://www.upwork.com/freelancers/~01f602ea358de439ef" target="_blank">Hire on Upwork</a>
+        <a class="btn" href="https://github.com/mhanif32" target="_blank">GitHub Projects</a>
+        <a class="btn" href="https://www.linkedin.com/in/mhanif32/" target="_blank">LinkedIn Network</a>
+        <a class="btn" href="https://x.com/mhanif32" target="_blank">X / Twitter</a>
+        <a class="btn" href="https://www.facebook.com/mhanif32/" target="_blank">Facebook Space</a>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>📩 Contact Me</h2>
-      <p>Email: <a href="mailto:mhanif32@gmail.com">mhanif32@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/923009255671" target="_blank">+92 300 9255671</a></p>
-    </div>
+    <!-- Direct Gateway / Encapsulated Form Routing -->
+    <section class="card">
+      <h2>📩 Direct Core Contact</h2>
+      <div class="contact-info">
+        <div class="contact-method">
+          <div class="contact-label">Secure Direct Mail</div>
+          <a href="mailto:mhanif32@gmail.com" class="contact-value">mhanif32@gmail.com</a>
+        </div>
+        <div class="contact-method">
+          <div class="contact-label">Instant Handshake</div>
+          <a href="https://wa.me/923009255671" class="contact-value" target="_blank">+92 300 9255671</a>
+        </div>
+      </div>
+    </section>
 
   </div>
+
+  <!-- Dynamic Typography Accent -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tagLine = document.querySelector('.tag');
+      let status = true;
+      setInterval(() => {
+        tagLine.textContent = status ? '(mhanif32)' : '_';
+        status = !status;
+      }, 1200);
+    });
+  </script>
 </body>
 </html>
